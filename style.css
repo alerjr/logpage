@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.telaLogin {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginEsquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginDireito {
+    width: 50vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardLogin {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #942727;
+    border-radius: 20px 10px;
+    box-shadow: 5px 5px 10px #0000007e;
+    border-top: 5px solid #BD1616;;
+}
+
+.cardLogin h1 {
+    padding-bottom: 10px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+    font-size: 150%;
+    padding-top: 25px;
+    margin-top: -20px;
+    letter-spacing: -1px;
+    color: #e9aaaf;
+}
+
+.imgLogo {
+    background-image: url(imgs/gaming-animate1.svg);
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 40vw;
+    margin-left: 100%;
+}
+
+.texfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #FFE6E6;
+    font-size: 120%;
+}
+
+.textfield input {
+    color: #FFE6E6;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 8px;
+    background-color: #a9414a;
+    text-align: center;
+}
+
+.botoes {
+    height: 25%;
+    width: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 0 20%;
+}
+
+.btn-login {
+    width: 60%;
+    padding: 2px 0px;
+    margin: 10px 10% 2% 10%;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: #ef3e3e;
+    color: #6d2020;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -12px rgb(15, 81, 15);
+
+    font-weight: 700;
+    font-family: 'Unbounded', cursive;
+    font-weight: 100;
+}
+
+.btn-account {
+    width: 60%;
+    padding: 2px 0px;
+    margin-bottom: 0;
+    margin: 6px 10% 0px 10%;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: #ef3e3e;
+    color: #6d2020;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -12px rgb(15, 81, 15);
+
+    font-weight: 700;
+    font-family: 'Unbounded', cursive;
+    font-size: 50%;
+}
+
+.warningPassword {
+    width: 60%;
+    padding: 0;
+    margin: auto;
+    position: relative;
+    top: 35%;
+
+    color: #FFE6E6;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 1300px){
+    .cardLogin{
+        height: 25vw;
+    }
+
+    .cardLogin h1 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 6px;
+        padding-top: 42px;
+    }
+
+    .cardLogin label {
+        font-size: 100%;
+    }
+
+    .botoes{
+        margin-top: 2%;
+    }
+
+    .btn-login{
+        margin-top: auto;
+        width: 150%;
+        font-size: 12px;
+    }
+
+    .btn-account{
+        margin-top: auto;
+        width: 150%;
+        font-size: 6px;
+        top: -1px;
+    }
+
+    .btn-login, .btn-account{
+        width: 80%;
+        padding: 1px;
+        margin: auto;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .cardLogin{
+        height: 75%;
+        width: 75%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .cardLogin h1 {
+        font-size: 120%;
+        margin-top: -42px;
+    }
+
+    .cardLogin label {
+        font-size: 100%;
+    }
+
+    .btn-login{
+        margin-top: auto;
+        top: 20%; right: 30%;
+        width: 150%;
+        font-size: 12px;
+    }
+
+    .btn-account{
+        margin-top: auto;
+        top: 15%;
+        right: 30%;
+        width: 150%;
+        font-size: 6px;
+    }
+  
+
+}
+
+@media screen and (max-width: 650px){
+    .warningPassword{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .cardLogin{
+        height: 90%;
+        width: 75%;
+        text-align: center;
+        font-size: 5px;
+    }
+    
+    .cardLogin label {
+        font-size: 200%;
+    }
+
+    .cardLogin h1 {
+        margin-top: -40px;
+        line-height: 15px;
+        text-align: center;
+        font-size: 300%;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+
+    .cardLogin input {
+        width: 100%;
+        height: 40%;
+        font-size: 5px;
+        padding-bottom: 4%;
+        text-align: center;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    .texfield{
+        margin: 0;
+        padding: 0;
+    }
+
+    .botoes{
+        width: 70%;
+    }
+
+    .btn-login{
+        margin-top: auto;
+        top: 25%; right: 30%;
+        width: 150%;
+        font-size: 6px;
+        letter-spacing: 1px;
+    }
+
+    .btn-account{
+        margin-top: auto;
+        top: 50%;
+        right: 30%;
+        width: 150%;
+        font-size: 4px;
+    }
+}

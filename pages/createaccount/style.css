@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'animate.css';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.createAccount{
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados {
+    text-align: center;
+    height: 50%;
+    width: 35%;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #942727;
+    border-radius: 20px 10px;
+    box-shadow: 5px 5px 10px #0000007e;
+    border-top: 5px solid #BD1616;
+    
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+
+.dados h1 {
+    position: relative;
+    padding: 2px 0px;
+    top: 5%;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #e9aaaf;
+}
+
+.dados input {
+    border: 0;
+    box-shadow: 0;
+    border-radius: 8px;
+    background-color: #a9414a;
+    width: 40%;
+
+    color: #FFE6E6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dados label {
+    color: #FFE6E6;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.textfield {
+    position: relative;
+    padding: 2px 0px;
+    top: 20%;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botoes {
+    position: relative;
+    padding: 2px 0px;
+    top: 30%;
+    width: 100%;
+}
+
+.botoes button{
+    padding: 2px;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    background-color: #ef3e3e;
+    color: #6d2020;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+    width: 22%;
+}
+
+.botoes .criarConta{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 0;
+}
+
+.botoes .back{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .dados {
+        height: 35vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .dados {
+        height: 35vw;
+    }
+
+    .dados h1 {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dados {
+        height: 35vw;
+    }
+
+    .dados h1 {
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .botoes{
+        margin-top: -18px;
+        width: 100%;
+    }
+
+    .botoes button{
+        padding: 2px;
+        margin-left: 3%;
+        margin-right: 3%;
+    
+        background-color: #ef3e3e;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        border: none;
+    
+        font-family: 'Unbounded', cursive;
+        text-transform: uppercase;
+        width: 30%;
+    }
+    
+    .botoes .criarConta{
+        font-size: 10px;
+        font-weight: 700;
+    }
+    
+    .botoes .back{
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .dados {
+        height: 30vw;
+    }
+
+    .dados h1 {
+        margin-top: -12%;
+        margin-bottom: 3%;
+        font-size: 150%;
+        line-height: 20px;
+    }
+
+    label {
+        font-size: 12px;
+        margin: -2px;
+        display: block;
+    }
+
+    input{
+        font-size: 8px;
+    }
+
+    .botoes {
+        margin-top: -7%;
+    }
+
+    .botoes button {
+        height: 20%;
+    }
+
+    .botoes .criarConta{
+        font-size: 5px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 5px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dados {
+        height: 30vw;
+    }
+
+    .dados h1 {
+        margin-top: -10%;
+        margin-bottom: -5%;
+        font-size: 120%;
+    }
+
+    .textfield {
+        padding: 1% 2% 1% 2%;
+    }
+
+    label {
+        font-size: 8px;
+        margin-top: 1px;
+        margin-bottom: -6px;
+        margin-top: -2px;
+        display: block;
+    }
+
+    .textfield input {
+        width: 50%;
+        font-size: 15%;
+    }
+
+    .botoes {
+        margin-top: -12%;
+    }
+
+    .botoes button {
+        height: 20%;
+    }
+
+    .botoes .criarConta{
+        font-size: 4px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 4px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .dados {
+        height: 26vw;
+    }
+
+    .dados h1 {
+        margin-top: -25%;
+        margin-bottom: -5%;
+        font-size: 120%;
+        line-height: 16px;
+    }
+
+    .textfield {
+        padding: 1% 2% 1% 2%;
+    }
+
+    label {
+        font-size: 8px;
+        margin-top: 1px;
+        margin-bottom: -6px;
+        margin-top: -2px;
+        display: block;
+    }
+
+    .textfield input {
+        width: 60%;
+        font-size: 15%;
+    }
+
+    .botoes button {
+        height: 20%;
+    }
+
+    .botoes .criarConta{
+        font-size: 4px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 4px;
+        font-weight: 500;
+    }
+}

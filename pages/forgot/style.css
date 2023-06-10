@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'animate.css';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.createAccount{
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ladoEsquerdo {
+    width: 50vw;
+}
+
+.ladoDireito {
+    width: 50vw;
+}
+
+.img1 {
+    background-image: url(../../imgs/san-francisco-bridge-animate.svg);
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 25vw;
+    margin-left: 2vw;
+
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.dados {
+    text-align: center;
+    height: 50%;
+    width: 50%;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 60px 35px;
+    background-color: #942727;
+    border-radius: 20px 10px;
+    box-shadow: 5px 5px 10px #0000007e;
+    border-top: 5px solid #BD1616;
+
+    margin-left: 25%;
+    
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+
+.dados h1 {
+    position: relative;
+    padding: 2px 0px;
+    top: 5%;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #e9aaaf;
+}
+
+.dados input {
+    border: 0;
+    box-shadow: 0;
+    border-radius: 8px;
+    background-color: #a9414a;
+    width: 40%;
+
+    color: #FFE6E6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dados label {
+    color: #FFE6E6;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.textfield {
+    position: relative;
+    padding: 2px 0px;
+    top: 20%;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botoes {
+    position: relative;
+    padding: 2px 0px;
+    top: 30%;
+    width: 100%;
+}
+
+.botoes button{
+    padding: 2px;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    background-color: #ef3e3e;
+    color: #6d2020;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+    width: 25%;
+    height: 25%;
+}
+
+.botoes .criarConta{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 0;
+    margin-top: 10px;
+}
+
+.botoes .back{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 2px 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .ladoEsquerdo {
+        width: 100%;
+    }
+    
+    .dados {
+        height: 25vw;
+        width: 40vw;
+        margin: auto;
+    }
+
+    .ladoDireito {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .dados {
+        height: 25vw;
+    }
+
+    .dados h1 {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dados {
+        height: 25vw;
+    }
+
+    .dados h1 {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .botoes{
+        margin-top: -18px;
+        width: 100%;
+    }
+
+    .botoes button{
+        padding: 2px;
+        margin-left: 3%;
+        margin-right: 3%;
+    
+        background-color: #ef3e3e;
+        cursor: pointer;
+        border-radius: 16px;
+        outline: none;
+        border: none;
+    
+        font-family: 'Unbounded', cursive;
+        text-transform: uppercase;
+        width: 30%;
+    }
+    
+    .botoes .criarConta{
+        font-size: 10px;
+        font-weight: 700;
+    }
+    
+    .botoes .back{
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .dados {
+        height: 20vw;
+    }
+
+    .dados h1 {
+        margin-top: -6%;
+        margin-bottom: 3%;
+        font-size: 170%;
+        line-height: 20px;
+    }
+
+    label {
+        font-size: 16px;
+        margin: -2px;
+        display: block;
+    }
+
+    input{
+        font-size: 8px;
+    }
+
+    .botoes {
+        margin-top: -7%;
+    }
+
+    .botoes button {
+        height: 20%;
+    }
+
+    .botoes .criarConta{
+        font-size: 8px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 8px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dados {
+        height: 10vw;
+    }
+
+    .dados h1 {
+        margin-top: -30%;
+        margin-bottom: 5%;
+        font-size: 120%;
+    }
+
+    .textfield {
+        padding: 1% 2% 1% 2%;
+    }
+
+    label {
+        font-size: 14px;
+        margin-top: 1px;
+        margin-bottom: -6px;
+        margin-top: -2px;
+        display: block;
+    }
+
+    .textfield input {
+        width: 50%;
+        font-size: 15%;
+    }
+
+    .botoes {
+        margin-top: -6%;
+    }
+
+    .botoes button {
+        height: 25%;
+        width: 50%;
+    }
+
+    .botoes .criarConta{
+        font-size: 8px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 8px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .dados {
+        height: 5vw;
+    }
+
+    .dados h1 {
+        margin-top: -40%;
+        margin-bottom: 5%;
+        font-size: 100%;
+        line-height: 16px;
+    }
+
+    .textfield {
+        padding: 1% 2% 1% 2%;
+    }
+
+    label {
+        font-size: 12px;
+        margin-top: 1px;
+        margin-bottom: -6px;
+        margin-top: -2px;
+        display: block;
+        line-height: 6px;
+    }
+
+    .textfield input {
+        width: 80%;
+        font-size: 15%;
+    }
+
+    .botoes button {
+        height: 20%;
+        width: 80%;
+    }
+
+    .botoes .criarConta{
+        font-size: 11px;
+        font-weight: 700;
+        padding: 1px 0;
+    }
+    
+    .botoes .back{
+        padding: 1px 0;
+        font-size: 11px;
+        font-weight: 500;
+    }
+}
